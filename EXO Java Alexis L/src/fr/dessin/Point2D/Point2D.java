@@ -2,19 +2,35 @@ package fr.dessin.Point2D;
 
 public class Point2D {
 
-    private int x = 3;
-    private int y = 2;
+    private static int compteur;
+    private Integer x;
+    private Integer y;
+
+    public Point2D() {
+        this.x = 0;
+        this.y = 0;
+        getCompteur();
+    }
+
+    public Point2D(Integer vX, Integer vY) {
+        this.x = vX;
+        this.y = vY;
+    }
 
     public void afficher()
     {
-        System.out.println(x);
-        System.out.println(y);
+        System.out.println("["
+                .concat(this.getX().toString())
+                .concat(",")
+                .concat(this.getY().toString())
+                .concat("]")
+        );
     }
 
-    public int getX() {
+    public Integer getX() {
         return x;
     }
-    public int getY() {
+    public Integer getY() {
         return y;
     }
 
@@ -29,5 +45,9 @@ public class Point2D {
     {
         this.setX(this.getX() + dX);
         this.setY(this.getY() + dY);
+    }
+
+    public static int getCompteur() {
+        return compteur;
     }
 }
