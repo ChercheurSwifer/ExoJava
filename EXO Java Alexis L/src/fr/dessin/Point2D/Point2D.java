@@ -7,14 +7,14 @@ public class Point2D {
     private Integer y;
 
     public Point2D() {
-        this.x = 0;
-        this.y = 0;
-        getCompteur();
+        this.setX(0);
+        this.setY(0);
     }
 
     public Point2D(Integer vX, Integer vY) {
-        this.x = vX;
-        this.y = vY;
+        this.setX(vX);
+        this.setY(vY);
+        Point2D.compteur++;
     }
 
     public void afficher()
@@ -48,6 +48,6 @@ public class Point2D {
     }
 
     public static int getCompteur() {
-        return compteur;
+        return Point2D.compteur;
     }
 }
