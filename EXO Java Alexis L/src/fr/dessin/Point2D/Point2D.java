@@ -2,7 +2,7 @@ package fr.dessin.Point2D;
 
 public class Point2D {
 
-    private static int compteur;
+    private static int compteur = 0;
     private Integer x;
     private Integer y;
 

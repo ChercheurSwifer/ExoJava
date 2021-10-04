@@ -15,8 +15,14 @@ public class Main {
         point2dd.afficher();
         point2dd.translater(40,52);
         point2dd.afficher();
-        
-        
+
         System.out.println(Point2D.getCompteur());
+
+        Point3D point3D = new Point3D();
+        point3D.setX(5);
+        point3D.setY(10);
+        point3D.setZ(8);
+        System.out.println(point3D.toString());
+        System.out.println(point3D.getClass().equals(point2d.getClass()));
     }
 }
