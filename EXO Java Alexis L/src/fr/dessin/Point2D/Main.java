@@ -15,5 +15,8 @@ public class Main {
         point2dd.afficher();
         point2dd.translater(40,52);
         point2dd.afficher();
+        
+        
+        System.out.println(Point2D.getCompteur());
     }
 }
