@@ -28,6 +28,6 @@ public class Point2D {
     public void translater(int dX, int dY)
     {
         this.setX(this.getX() + dX);
-        this.setX(this.getY() + dY);
+        this.setY(this.getY() + dY);
     }
 }
